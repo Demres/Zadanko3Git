@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane fx:id="pane" prefHeight="600.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="191.0" prefWidth="199.0">
+               <children>
+                  <Slider fx:id="redSlider" max="255.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="40.0" text="Red" />
+                        <TextField fx:id="redTextField" />
+                     </children>
+                  </HBox>
+                  <Slider fx:id="greenSlider" max="255.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="40.0" text="Green" />
+                        <TextField fx:id="greenTextField" />
+                     </children>
+                  </HBox>
+                  <Slider fx:id="blueSlider" max="255.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="40.0" text="Blue" />
+                        <TextField fx:id="blueTextField" />
+                     </children>
+                  </HBox>
+                  <Pane fx:id="rgbPane" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+            <VBox layoutX="201.0" prefHeight="191.0" prefWidth="199.0">
+               <children>
+                  <Slider fx:id="cyanSlider" value="100.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="40.0" text="Cyan" />
+                        <TextField fx:id="cyanTextField" />
+                     </children>
+                  </HBox>
+                  <Slider fx:id="magentaSlider" value="100.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="40.0" text="Magenta" />
+                        <TextField fx:id="magentaTextfield" />
+                     </children>
+                  </HBox>
+                  <Slider fx:id="yellowSlider" value="100.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="40.0" text="Yellow" />
+                        <TextField fx:id="yellowTextField" />
+                     </children>
+                  </HBox>
+                  <Slider fx:id="blackSlider" value="100.0" />
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="20.0" prefWidth="40.0" text="Black" />
+                        <TextField fx:id="blackTextField" />
+                     </children>
+                  </HBox>
+                  <Pane fx:id="cmykPane" prefHeight="200.0" prefWidth="200.0" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
